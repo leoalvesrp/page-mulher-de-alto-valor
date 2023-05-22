@@ -117,16 +117,12 @@ font-size: 1.5rem;
 .margin-button-modal{
   height: 1.5rem;
 }
-.button-submit-container{
-  display: flex;
-  justify-content: flex-end;
-}
+
 .button-submit{
   margin-top: 1.8rem;
   height: 3rem;
   width: 8rem;
   background-color: #F1CA27;
-
   font-size: 1.75rem;
   font-weight: bold;
   cursor: pointer;
@@ -138,6 +134,7 @@ font-size: 1.5rem;
   animation-name: abrir-modal;
   animation-duration: 0.5s;
 }
+
 
 @keyframes abrir-modal{
   from{
@@ -159,6 +156,34 @@ font-size: 1.5rem;
     opacity: 0;
   }
 }
+.button-loading {
+  position: relative;
+}
+
+.button-loading::after {
+  content: "";
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 16px;
+  height: 16px;
+  border: 2px solid #f3f3f3;
+  border-top: 2px solid #3498db;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+.button-loading.loading::after {
+  display: block;
+}
+
+@keyframes spin {
+  0% { transform: translate(-50%, -50%) rotate(0deg); }
+  100% { transform: translate(-50%, -50%) rotate(360deg); }
+}
+
 
 
 .close {

@@ -24,16 +24,18 @@
           <h1>Para receber seu E-book preencha o formulário abaixo 😊 </h1>
           <form action="">
             <label for="nome">Nome</label>
-            <input id="nome" type="text">
+            <input name="nome" id="nome" type="text" required>
             <label for="sobrenome">Sobrenome</label>
-            <input id="sobrenome" type="text">
+            <input name="sobrenome" id="sobrenome" type="text" required>
             <label for="telefone">Telefone:</label>
-            <input type="text" id="telefone" placeholder="(DDD) Número">
+            <input 
+            name="telefone" 
+            type="tex" 
+            placeholder="(DDD) Número" 
+            required>
             <label for="email">Email</label>
-            <input id="email" type="text">
-            <div class="button-submit-container">
-              <button class="button-submit" id="button" type="submit">Enviar</button>
-            </div>
+            <input name="email" id="email" type="text" required>
+            <button class="button-submit button-loading" id="button" type="submit">Enviar</button>
           </form>
         </div>
       </div>
