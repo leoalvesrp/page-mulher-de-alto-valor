@@ -1,0 +1,69 @@
+.section-1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url('../src/bg-section1.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+}
+
+.container {
+  max-width: 61.25rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  color: #fff;
+}
+
+.title-copy .title {
+  font-size: 3rem;
+  text-align: center;
+  width: 50.3125rem;
+  height: 9.8125rem;
+  margin-top: 6.25rem;
+}
+
+.container .line {
+  width: 11.5625rem;
+  height: 0.125rem;
+  background-color: #C020C6;
+  margin-top: 3.75rem;
+}
+
+.container .sub-title {
+  font-size: 1.75rem;
+  max-width: 53.4375rem;
+  margin-top: 3.75rem;
+}
+
+.img-woman {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 61.25rem;
+  height: 37.5rem;
+  margin-top: 2.5rem;
+}
+
+.img-woman img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.button-buy {
+  width: 36.5625rem;
+  height: 6.5rem;
+  background-color: #F1CA27;
+  font-size: 1.75rem;
+  font-weight: bold;
+  margin-top: 3.75rem;
+  cursor: pointer;
+  margin-bottom: 4rem;
+}
+.button-buy:hover {
+  opacity: 0.7;
+}
