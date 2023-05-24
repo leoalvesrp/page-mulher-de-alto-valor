@@ -9,6 +9,9 @@
   width: 100%;
   height: 100%;
 }
+.section2-container{
+color: #fff;
+}
 
 .title-sc-2 {
   font-size: 2.2rem;
@@ -25,16 +28,16 @@
   width: 42.625rem;
   height: 2.9375rem;
   font-size: 1.3125rem;
-  margin-left: -9.375rem;
 }
 
 .sub-title2-sc-2 {
-  margin-left: 6.25rem;
+  text-align: center;
+  margin-right: 3.1rem;
 }
 
 .content-sc-2 {
   display: flex;
-  margin-top: 4.6875rem;
+  margin-top: 1.8rem;
   margin-bottom: 7.0625rem;
 }
 

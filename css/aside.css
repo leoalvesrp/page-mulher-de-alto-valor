@@ -1,0 +1,36 @@
+.aside-3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #190117;
+  color: #fff;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  gap: 121px;
+}
+.aside{
+  display:flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+.aside h1{
+  font-size: 36px;
+}
+.aside p{
+  font-size: 22px;
+}
+.aside-info{
+  width: 500px;
+  gap: 326px;
+}
+.line-aside{
+  width: 3rem;
+  height: 0.125rem;
+  background-color: #C020C6;
+}
