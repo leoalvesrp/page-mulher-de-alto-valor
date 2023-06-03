@@ -56,6 +56,7 @@ function initForm() {
     }
 
     event.preventDefault();
+    const id = String(new Date().getTime());
     const name = document.querySelector('input[name=nome]').value;
     const sobrenome = document.querySelector('input[name=sobrenome]').value;
     const telefoneInput = document.querySelector('input[name=telefone]');
@@ -73,13 +74,13 @@ function initForm() {
 
     startLoading();
 
-    fetch('https://api.sheetmonkey.io/form/5r2x9dgZJwvQnNQfoU5DZH', {
+    fetch('http://localhost:3000/compras', {
       method: 'post',
       headers: {
         'Accept': 'application/json',
         'Content-Type': 'application/json',
       },
-      body: JSON.stringify({ name, sobrenome, telefone, email }),
+      body: JSON.stringify({id, name, sobrenome, telefone, email }),
     }).then(() => {
       stopLoading();
       closeModal();
